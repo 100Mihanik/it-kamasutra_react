@@ -10,19 +10,19 @@ function Letbar() {
             <NavLink to="/My_page">My page</NavLink>
           </li>
           <li className="left_section__item li_2">
-            <NavLink to="/Article">Article</NavLink>
+            <NavLink to="/article">Article</NavLink>
           </li>
           <li className="left_section__item li_3">
-            <NavLink to="/Messages">Messanes</NavLink>
+            <NavLink to="/messages">Messanes</NavLink>
           </li>
           <li className="left_section__item li_4">
-            <NavLink to="/Friends">Friends</NavLink>
+            <NavLink to="/friends">Friends</NavLink>
           </li>
           <li className="left_section__item li_5">
-            <NavLink to="/Subscriptions">Subscriptions</NavLink>
+            <NavLink to="/subscriptions">Subscriptions</NavLink>
           </li>
           <li className="left_section__item li_6">
-            <NavLink to="/Photos">Photos</NavLink>
+            <NavLink to="/photos">Photos</NavLink>
           </li>
         </ul>
       </nav>

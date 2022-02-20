@@ -1,7 +1,7 @@
 import Article from "../Articles/Article/Article";
 import "./Artickes_random.css";
 
-function Articles_random() {
+function ArticlesRandom() {
   return (
     <div>
       <Article Article="Lorem блаблблабалбалбал" LikeNumber="1"/>
@@ -11,4 +11,4 @@ function Articles_random() {
     </div>
   );
 }
-export default Articles_random;
+export default ArticlesRandom;

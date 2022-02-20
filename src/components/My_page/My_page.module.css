@@ -1,0 +1,6 @@
+.avatar {
+	width: 250px;
+	height: 300px;
+	object-fit: contain;
+	background-color: rgb(158, 158, 153);
+}

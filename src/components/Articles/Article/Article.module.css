@@ -1,0 +1,33 @@
+.article {
+	position: relative;
+	display: flex;
+  min-height: 300px;
+  background: rgb(241, 136, 136);
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+.avatar {
+	margin-right: 10px;
+	margin-bottom: 10px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+.like{
+	position: absolute;
+	display: inline-flex;
+	padding: 10px 10px 5px 10px;
+	right: 0;
+	bottom: 0;
+}
+.like__image {
+	width: 15px;
+	height: 15px;
+	justify-content: right;
+	align-items: end;
+}
+.like__number{
+	padding-left: 5px;
+	font-family: sans-serif;
+}

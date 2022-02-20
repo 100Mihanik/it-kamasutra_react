@@ -1,0 +1,38 @@
+@font-face {
+	font-family: 'Airfool';
+	src: url("../../fonts/airfool.woff2") format('woff2');
+}
+
+header {    
+	background: url('./header_background.jpg') repeat-x left top; 
+}
+.header_inner {
+	display: flex;
+	align-items: center;
+}
+.header_inner__link {
+	display: flex; /*'этим заодно убрал отступ под img и <a>*/
+	align-items: center;
+}
+.header_inner__logo {
+	margin-right: -3px;
+	transform: translate(-6px, 0px);
+}        
+.header_inner__title {
+	font-family: Airfool, sans-serif;
+	color: #d9e8f3;
+	font-size: 38px; 
+	margin: 0;
+	text-transform: uppercase;
+}
+.header_inner__search {
+	margin-left: 19px;
+}
+.header_inner__input {
+	height: 18px;
+	border-radius: 5px;
+	border-style: none;
+	background-color: rgb(240, 240, 240);
+	outline: none;
+	padding-left: 5px;
+}

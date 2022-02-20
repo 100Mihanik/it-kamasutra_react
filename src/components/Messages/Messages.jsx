@@ -2,19 +2,13 @@
 
 import Message from "./Message/Message";
 
-function Messages() {
+function Messages(props) {
 
-	let messageData = [
-		{id: 1, message: "Hi, how are you?", likesNumbers: 11},
-		{id: 2, message: "Hi, better than you look", likesNumbers: 136},
-		{id: 3, message: "Okay..", likesNumbers: 1},
-	]
+	let messagesElements = props.messageData.map(d => <Message Message={d.message} LikeNumber={d.likesNumbers}/>);
 
   return (
     <div>
-      <Message Message={messageData[0].message} LikeNumber={messageData[0].likesNumbers}/>
-      <Message Message={messageData[1].message} LikeNumber={messageData[1].likesNumbers}/>
-      <Message Message={messageData[2].message} LikeNumber={messageData[2].likesNumbers}/>
+      {messagesElements}
     </div>
   );
 }

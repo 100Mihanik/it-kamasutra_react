@@ -9,7 +9,8 @@ import Articles from "./Articles/Articles";
 import ArticlesRandom from "./Articles_random/Artickes_random"
 
 
-function App() {
+function App(props) {
+
   return (
 <BrowserRouter>
 	<Header />
@@ -18,7 +19,7 @@ function App() {
 		<main className="main">
 			<Routes>
 				<Route path="/my_page" element={<MyPage />} />
-				<Route path="/messages" element={<Messages value="2"/>} />
+				<Route path="/messages" element={<Messages messageData={props.appState.messagePage.messageData}/>} />
 				<Route path="/article" element={<Articles />} />
 				<Route path="/article/random" element={<ArticlesRandom />} />
 			</Routes>

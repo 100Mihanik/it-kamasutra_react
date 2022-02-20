@@ -4,12 +4,12 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 import App from "./components/App";
-
+import state from "./Redux/State";
 
 
 
 ReactDOM.render(
-	<App />,
+	<App appState={state}/>,
   document.getElementById("root")
 );
 

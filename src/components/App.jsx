@@ -19,7 +19,9 @@ function App(props) {
 		<main className="main">
 			<Routes>
 				<Route path="/my_page" element={<MyPage />} />
-				<Route path="/messages" element={<Messages messageData={props.appState.messagePage.messageData}/>} />
+				<Route path="/messages" element={<Messages 
+				messageData={props.appState.messagePage.messageData} 
+				addPost={props.addPost}/>} />
 				<Route path="/article" element={<Articles />} />
 				<Route path="/article/random" element={<ArticlesRandom />} />
 			</Routes>

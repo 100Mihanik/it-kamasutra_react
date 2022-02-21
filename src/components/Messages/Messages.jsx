@@ -9,15 +9,17 @@ function Messages(props) {
 
 	let newMessageElement = React.createRef();
 	let addMessage = () => {
+		props.addPost();
+	}
+	let onPostChange = () => {
 		let text = newMessageElement.current.value;
-		props.addPost(text);
-		newMessageElement.current.value = '';
+		props.updateNewPostText(text);
 	}
 
   return (
 		<>
 		<div className="createMessage">
-			<textarea ref={newMessageElement}></textarea>
+			<textarea onChange={onPostChange} ref={newMessageElement} value={props.newPostText}/>
 			<button onClick={addMessage}>Send</button>
 		</div>
     <div>

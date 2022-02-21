@@ -5,17 +5,17 @@ import reportWebVitals from "./reportWebVitals";
 
 import App from "./components/App";
 
-import {addPost} from "./Redux/State"
+import { addPost, updateNewPostText } from "./Redux/State";
 
 export let renderEntireTree = (state) => {
-
-	ReactDOM.render(
-		<App appState={state} addPost={addPost}/>,
-		document.getElementById("root")
-	);
-
-}
-
-
+  ReactDOM.render(
+    <App
+      appState={state}
+      addPost={addPost}
+      updateNewPostText={updateNewPostText}
+    />,
+    document.getElementById("root")
+  );
+};
 
 // reportWebVitals();

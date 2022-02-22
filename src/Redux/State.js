@@ -1,4 +1,6 @@
-import {renderEntireTree} from "./../render"
+let renderEntireTree = () => {
+	console.log('State chamged');
+}
 
 let state = { 
 	messagePage: {
@@ -10,7 +12,7 @@ let state = {
 }
 }
 
-export let addPost = () => {
+export const addPost = () => {
 	let newPost = {
 		id: 5,
 		message: state.messagePage.newPostText,
@@ -21,9 +23,13 @@ export let addPost = () => {
 	renderEntireTree(state);	
 }
 
-export let updateNewPostText = (newText) => {
+export const updateNewPostText = (newText) => {
 	state.messagePage.newPostText = newText;
 	renderEntireTree(state);	
+}
+
+export const subscribe = (observer) => {	//ф-я слушатель
+	renderEntireTree = observer;
 }
 
 export default state;
